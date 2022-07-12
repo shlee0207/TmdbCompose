@@ -4,7 +4,6 @@ import com.junipapa.tmdbcompse.models.network.PopularMovieResponse
 import retrofit2.http.GET
 
 interface MovieApi {
-
-    @GET("/movie/popular")
+    @GET("3/movie/popular")
     suspend fun fetchPopularMovies(): PopularMovieResponse
 }
